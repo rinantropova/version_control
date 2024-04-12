@@ -87,5 +87,12 @@ The `git log --oneline` command prints the contents of the commit logs as well, 
 The `--oneline` option values are particularly useful with another `log` option called `--graph`. This option adds a nice graph showing a branch and merge history:
 ![git_log_oneline_graph](git_snap.png)
 
+## Remote repositories
+### git pull
+The `git pull` command is basically a combination of the `git fetch` and `git merge` commands, where Git will fetch from the specified remote and then immediately try to merge it into the branch.
 
-[//]: # (What is `Merge made by the 'ort' strategy.`? shown when 2 branches are merged.)
+### git push
+The `git push`command is used to communicate with another repository, calculate what your local database has that the remote one doesn't, and then pushes the difference into the other repository. It requires write access to the other repository and so normally is authenticated somehow.
+
+### git remote
+The `git remote` command is a management tool for the record of remote repositories. It allows to save long URLs as short handles, such as "origin" so you don't have to type them out all the time. You can have several of these and the `git remote` command is used to add, change and delete them.
